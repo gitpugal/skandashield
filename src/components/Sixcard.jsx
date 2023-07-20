@@ -41,12 +41,12 @@ const CardDesign1 = () => {
     <Container>
     <Grid container spacing={2}>
       {cardData.map((card, index) => (
-        <Grid item key={index} xs={12} sm={4}>
-          <Card>
+        <Grid item key={index} xs={12} sm={4} >
+          <Card sx={{backgroundColor: "#F8F8FD", textAlign: "center"}}>
             <CardContent>
               <Typography variant="h6">{card.title}</Typography>
-              <Typography variant="body1">{card.content}</Typography>
-              <Button variant='contained' sx={{bgcolor:'#134ca7'}} >{card.button}</Button>
+              <Typography variant="body1" sx={{paddingX: "10px", lineHeight:"25px", marginY: "20px"}}>{card.content}</Typography>
+              <Button  sx={{borderColor: "#B7BEF8", border: 1, paddingX: "15px", borderRadius: "10px", backgroundColor: "transparent", color:"#134CA7"}} >{card.button}</Button>
             </CardContent>
           </Card>
         </Grid>
