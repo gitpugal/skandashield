@@ -28,7 +28,7 @@ function TwoColumnBanner(props) {
   React.useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
-      3000,
+      1500,
     );
     return () => clearTimeout(intervalId);
   }, []);

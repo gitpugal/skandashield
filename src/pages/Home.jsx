@@ -34,7 +34,7 @@ function Home() {
   });
 
   return (
-    <div className='w-screen overflow-x-hidden'>
+    <div className='w-screen h-fit flex flex-col pb-10 overflow-x-hidden'>
       <motion.div className="progress-bar bg-blue-600 z-50" style={{ scaleX }} />
       <ResponsiveAppBar />
       <TwoColumnBanner
@@ -67,7 +67,7 @@ function Home() {
       />
       {/* <TwoColumnBanner2 /> */}
       <Award />
-      <CardDesign />
+      {/* <CardDesign /> */}
       <Powerful />
       <CardDesign1 />
       <Customerreview />
