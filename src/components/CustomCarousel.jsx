@@ -24,7 +24,7 @@ const CustomCarousel = (props) => {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -50,7 +50,7 @@ const CustomCarousel = (props) => {
                     {
                         companies.map((company) => (
                             <div className='h-20 flex w-1/2 bg-opacity-30 text-center rounded-2xl'>
-                                <div className='w-1/3 h-full  justify-center items-center text-center flex px-4 bg-white bg-opacity-25 rounded-2xl mx-auto'>
+                                <div className='w-fit h-full  justify-center items-center text-center flex px-4 bg-white bg-opacity-25 rounded-2xl mx-auto'>
                                     <p className='text-white  font-bold text-xl'>{company}</p>
                                 </div>
                             </div>
