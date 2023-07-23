@@ -37,8 +37,8 @@ function TwoColumnBanner(props) {
 
   return (
     // <>
-    <Container className='h-screen mt-5 overflow-x-hidden flex flex-col justify-center items-center'>
-      <Grid container mt={2} spacing={2} >
+    <Container className='h-fit lg:h-screen mt-5 md:mt-5 pb-14 overflow-x-hidden flex flex-col justify-center items-center'>
+      <Grid container spacing={2} >
         <Grid item xs={12} md={6} sm={12} xl={4} lg={6} >
           <Box mt={2} px={2}>
 
@@ -55,9 +55,9 @@ function TwoColumnBanner(props) {
               }
               {props.titleEnd}
             </Typography>
-            <Typography variant="body1" color="#333333" mb={4}>{props.description}</Typography>
+            <Typography variant="body1" color="#333333" mb={2}>{props.description}</Typography>
 
-            <div className='flex flex-row w-full md:w-[90%] mt-10'>
+            <div className='flex flex-row w-full md:w-[90%] md:mt-10'>
               <Button
                 className='flex-1 hover:bg-gray-800'
                 sx={{
@@ -65,7 +65,7 @@ function TwoColumnBanner(props) {
                   borderColor: '#134ca7',
                   color: '#344054',
                   fontWeight: { xs: 500, sm: 600 },
-                  fontSize: { xs: "12px", sm: "14px" },
+                  fontSize: { xs: "14px", sm: "14px" },
                   p: { xs: "15px", sm: "15px 24px" },
                 }} >
                 {props.secondaryButton}
@@ -76,8 +76,8 @@ function TwoColumnBanner(props) {
                   bgcolor: '#134ca7',
                   marginLeft: "15px",
                   fontWeight: { xs: 500, sm: 600 },
-                  fontSize: { xs: "12px", sm: "14px" },
-                  p: { xs: "15px", sm: "15px 24px" },
+                  fontSize: { xs: "14px", sm: "14px" },
+                  p: { xs: "12px", sm: "15px 20px" },
                 }}>
                 {props.primaryButton}</Button>
             </div>
@@ -85,8 +85,7 @@ function TwoColumnBanner(props) {
         </Grid>
 
         <Grid item xs={12} sm={12} md={6} xl={4} lg={6}  >
-          <Tilt options={defaultOptions} className="hidden md:block">
-
+          <Tilt options={defaultOptions} >
             <motion.div
               animate={{
                 y: [-15, 10, -10],
@@ -99,8 +98,8 @@ function TwoColumnBanner(props) {
               }}
             >
 
-              <div>
-                <BgAnimation />
+              <div className='pt-10 '>
+                {/* <BgAnimation /> */}
                 {props.imageSrc}
               </div>
             </motion.div>

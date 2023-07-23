@@ -1,0 +1,7 @@
+/* Hide arrows on mobile screens */
+@media (max-width: 768px) {
+    .rec.rec-arrow {
+      display: block !important;
+    }
+  }
+  

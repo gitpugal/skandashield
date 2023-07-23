@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
     <div className="px-0 md:px-14 pt-3">
       <Container className='bg-blue' maxWidth="xl">
         <Toolbar disableGutters>
-          <img src={logo} className='h-10 w-20 absolute  right-32 md:left-0 mr-3' alt="" />
+          <img src={logo} className='h-10 w-20 lg:left-0  left-1/2' alt="" />
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton

@@ -42,7 +42,7 @@ const CardDesign1 = () => {
     <Grid container spacing={2}>
       {cardData.map((card, index) => (
         <Grid item key={index} xs={12} sm={4} >
-          <Card sx={{backgroundColor: "#F8F8FD", textAlign: "center"}}>
+          <Card sx={{backgroundColor: "#F8F8FD", minHeight: "100%", textAlign: "center"}}>
             <CardContent>
               <Typography variant="h6">{card.title}</Typography>
               <Typography variant="body1" sx={{paddingX: "10px", lineHeight:"25px", marginY: "20px"}}>{card.content}</Typography>

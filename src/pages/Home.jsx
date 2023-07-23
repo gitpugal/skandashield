@@ -21,21 +21,13 @@ import { Bannerimage } from '../images/Vector';
 import { Prevent } from '../images/Vector';
 import BgAnimation from '../Animations/BgAnimation';
 import { motion, useScroll, useSpring } from "framer-motion"
+import SimpleSlider from '../components/BannerCarousel'
 
 
 
 function Home() {
-  // const { scrollYProgress } = useScroll()
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
-
   return (
     <div className='w-screen h-fit flex flex-col pb-10 overflow-x-hidden'>
-      <motion.div className="progress-bar bg-blue-600 z-50" style={{ scaleX }} />
       <ResponsiveAppBar />
       <TwoColumnBanner
         titleStart="We "
@@ -50,7 +42,7 @@ function Home() {
         imageSrc={<Bannerimage />}
       />
       <CustomCarousel title={"Our Services"} />
-
+      {/* <SimpleSlider /> */}
       <TwoColumnBanner
         titleStart="How do we "
         textAnimation={false}
@@ -65,9 +57,7 @@ function Home() {
         secondaryButton="Get Started"
         imageSrc={<Prevent />}
       />
-      {/* <TwoColumnBanner2 /> */}
       <Award />
-      {/* <CardDesign /> */}
       <Powerful />
       <CardDesign1 />
       <Customerreview />
